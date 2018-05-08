@@ -1,0 +1,161 @@
+/* body {
+  font-family: font-family: 'Roboto Mono', monospace;
+  text-align: center;
+  background-color: #E1D7D4;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+h1, h4 {
+  font-family: 'Rubik', sans-serif;
+  Font-weight: normal, 700;
+}
+
+h1 {
+  color: #E34E45;
+}
+
+h3 {
+  color: #E34E45;
+
+}
+
+ul {
+  list-style-type: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#table-container {
+  height: 40%;
+  width: 40%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dot {
+  height: 50px;
+  width: 50px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+li {
+}
+
+.reserved {
+  background-color: 
+} */
+
+body {
+  font-family: font-family: 'Roboto Mono', monospace;
+  background-color: #E1D7D4;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+
+h1, h3 {
+  font-family: 'Rubik', sans-serif;
+  color: #E34E45;
+}
+
+h4 {
+  font-family: 'Rubik', sans-serif;
+
+}
+
+.dot {
+  height: 70px;
+  width: 70px;
+  background-color: #EEE;
+  border-radius: 50%;
+  margin-right: -68px;
+  margin-top: 20px;
+  margin-left: -104px;
+}
+
+li {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-left: 100px;
+  flex-direction: row;
+}
+
+ul {
+  list-style-type: none;
+  flex-wrap: wrap;
+  display: flex;
+  margin-right: 50px;
+  flex-direction: row;
+
+}
+
+#table-container {
+  display: flex;
+  background-color: #fff;
+  height:70%;
+  width: 30%;
+  align-items: space-between;
+  justify-content: space-around;
+
+}
+
+.ind {
+  width: 60%;
+  height: 10%;
+}
+
+button {
+  margin-bottom: 10%;
+  length: 10%;
+  width: 20%;
+  border-radius: 0px;
+}
+.other {
+  margin-right: 20%;
+}
+
+span {
+  margin-left: 4px;
+}
+
+h5 {
+  margin-left: 31px;
+  margin-top: 26px;
+}
+
+#form {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 300px;
+  box-shadow: 0px 0px 31px 1px rgba(0,0,0,0.3);
+}
+
+#cancel-button {
+  margin-left: 250px;
+}
+
+#submit-button {
+  width: 80%;
+  background-color: #008000;
+  margin-left: 25px;
+  color: white;
+}
+
+.reserved {
+  background-color: #bbb;
+}
+
+
+
