@@ -2,7 +2,7 @@
   $("#form").css("display", "none")
 
 
-  $(".dot").click(function(){
+  $(".available").click(function(){
     $("#form").show();
   });
 
@@ -10,10 +10,15 @@
     $("#form").hide();
   });
 
-  $("#table-container").hover(function() {
+  $(".available").hover(function() {
     $(this).css('cursor','pointer');
       
   });
+
+  $("#submit-button").click(function(){
+    $("#form").hide();
+  });
+
 
 
 });  
