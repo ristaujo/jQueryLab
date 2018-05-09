@@ -4,14 +4,14 @@ $(document).ready((e) => {
   let phone;
   let party;
   let addText;
+  let table = {};
 
   $("#form").css("display", "none")
   $(".table-data").css("display", "none")
 
-  $(document).click((e) => {
-
-    $(".available").click(function(){
+    $(".available").click(function(e){
       $("#form").fadeIn(1000);
+      table = e.target;
     });
 
     $("#cancel-button").click(function(){
@@ -19,15 +19,16 @@ $(document).ready((e) => {
     });
 
     $("#submit-button").on("click", (event) => {
-      name = $("#name").attr("name");
+      name = $("#name").val();
+      phone = $("#phone").val();
+      party = $("#party").val();
       addText = $(".table-data").text();
-      $("#name").text(name);
-      $("#form").hide();
-      $(e.target).removeClass("available").addClass("reserved");
+      console.log(name, phone, party);
+      $(table).attr("name", name).attr("phone", phone).attr("party", party);
+      $(table).removeClass("available").addClass("reserved");
       $("#form").fadeOut(1000);
 
       }); 
-  });
 
   /*if((".dot").hasClass("reserved")) {
     $(".dot").hover(() => {
@@ -37,7 +38,6 @@ $(document).ready((e) => {
 
   $(".available").hover(function() {
     $(this).css('cursor','pointer');
-      
   });
 
 
